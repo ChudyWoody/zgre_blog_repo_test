@@ -71,7 +71,7 @@ Teraz zajmiemy się synchronizacją naszej stronki z obsidianem. Posłuży nam d
 gdzie "sourcepath" to lokalizacja postów w Obsidianie, które chcemy na stronce, a "destinationpath" to lokalizacja postów w plikach stronki. Opcja -a to archive - kopiuje z symlinkami i uprawnieniami i innymi metadanymi, opcja -v to verbose - żeby nam powiedział czy wszystko spoko i co jest niespoko, opcja --delete - usunie w destinationpath to czego nie ma w sourcepath. Dla mnie to będzie:
 
 	rsync -av --delete /home/zgredek/Dokumenty/Obsidian_Vault/Inbox/*.md /home/zgredek/Programowanie/python_envs/hugo_obsidian_website/zgre_blog_test/content/posts
-
+!![Pasted image 20250304230039](/images/Pasted%20image%2020250304230039.png)
 Warto w ogóle sobie wcześniej przygotować kilka testowych postów, najlepiej ze zdjęciami, żeby sprawdzić jak to się sprawuje. A sprawuje się średnio ze zdjęciami, bo Obsidian trzyma załączniki tam gdzie mu się powie, z reguły w folderze wyszczególnionym w ustawieniach przez użytkownika (tak polecam mieć skonfigurowane) i w samych notatkach ma wewnętrzne swoje linki do załączników. Trzeba to jakoś obejść, a pythonowe obejście napisał networkchuck. Ja je troszeńkę pozmieniam, bo w chuckowym skrypcie zostawały wykrzykniki przed zdjęciami. 
 Pamiętaj że dla pythona ważne są tabulatory, trzeba je usunąć, bo w tej notce są po dwa przed każdą "zerową" kolumną. 
 
@@ -173,7 +173,11 @@ file.write(content)
 print("Markdown files processed and images copied successfully")
 ```
 
+Sprawdźmy czy działa:
 
+	hugo serve -t hugo-coder
+I w przeglądarce localhost:1313.
+Powinno działać, jeśli nie działa to usuń zawartość folderu public, żeby hugo na nowo wygenerował stronkę. Jeśli się tego nie zrobi to samo generowanie na nowo nie pomaga. 
 
 Jadymy dalyj. 
 
@@ -197,7 +201,7 @@ Otwórz go sobie:
 
 Do tej pory pracowaliśmy na lokalnym repozytorium gita na naszym kompie, ale git się o tym nie kapnie póki mu nie powiemy żeby się kapnął. Musimy mu powiedzieć, że to w naszym folderze jest źródłem dla zgre_blog_test_repo na githubie:
 
-		git remote add origin git@github.com:ChudyWoody/zgre_blog_test_repo
+		git remote add origin git@github.com:ChudyWoody/zgre_blog_repo_test
 		# po dwukropku dajemy swoją nazwę użytkownika w GitHubie, po slashu nazwę repozytorium (tą na githubie, może się różnić od lokalnego folderu jak u mnie). Origin to powszechny sposób etykietowania czy coś.
 
 Następnie trzeba dodać wszystkie zmiany jakie poczyniliśmy w lokalnym folderze do lokalnego repo (upewnij się że jesteś w odpowiednim miejscu):
@@ -207,6 +211,7 @@ Następnie trzeba dodać wszystkie zmiany jakie poczyniliśmy w lokalnym folderz
 		git commit -m "pierwszy commit" # doda pierwszy commit, -m służy do dodania komentarza
 		git push -u origin master # wyśle rzeczy do githuba? Tak, pośle rzeczy do githuba.
 
+***TO CHYBA NIEWAŻNE 
 Teraz będziemy się rozjeżdżać z Chuckiem, bo on swoją stronkę hostuje na Hostinger, ale my chcemy używać tylko Github Pages. 
 
 		# Tworzy nową gałąź (GHPages) zawierającą tylko pliki z katalogu `public`
@@ -218,11 +223,12 @@ Teraz będziemy się rozjeżdżać z Chuckiem, bo on swoją stronkę hostuje na 
 		# Usuwa lokalną gałąź GHPages-deploy (nie jest już potrzebna, służyła tylko do pushnięcia jej do GitHuba)
 		git branch -D GHPages-deploy
 
-Dobra, mamy gałązkę z samą stronką do publikowania. 
+***Dobra, mamy gałązkę z samą stronką do publikowania.***
+
 Github Pages normalnie pozwala na publikowanie stron zrobionych w Jekyllu, ale hugo ma sposób żeby to obejść. 
 https://gohugo.io/hosting-and-deployment/hosting-on-github/
 
-Trzeba wejść w swoje repo ze stronką, wejść w ustawienia repo (nie użytkowanika jak wcześniej, ustawienia repo będą na poziomej wstążce, musimy też wybrać odpowiedniego brancha - GHPages w naszym przypadku). Po lewej będzie zakładka Pages. Pod nagłówkiem "Build and deploymment" wybieramy Source "GitHub Actions" (nie trzeba nijak potwierdzać). 
+Trzeba wejść w swoje repo ze stronką, wejść w ustawienia repo (nie użytkowanika jak wcześniej, ustawienia repo będą na poziomej wstążce ***,musimy też wybrać odpowiedniego brancha - GHPages w naszym przypadku).*** Po lewej będzie zakładka Pages. Pod nagłówkiem "Build and deploymment" wybieramy Source "GitHub Actions" (nie trzeba nijak potwierdzać). 
 
 W naszym lokalnym folderze trzeba utworzyć nowy katalog z plikiem hugo.yaml
 
@@ -245,4 +251,4 @@ Następnie trzeba uruchomić workflow. By to zrobić wybieramy nasz repo ze stro
 Po kliknięciu będzie się chwilę kulać. Jak znaczek się zmieni na zielony znaczy że skończył. 
 Wtedy można kliknąć na ten nasz workflow, pokażą się boksy "build" i "deploy". Pod drugim będzie link do naszej stronki. 
 
-### problem - stronka się wygenerowała, ale zdjęcia są złe, trzeba pokminić nad lokalizacjami
+### problem - stronka się wygenerowała, ale zdjęcia są złe, trzeba pokminić nad lokalizacjami, problem pewnie jest w hugo.yaml który źle mi interpretuje lokalizacje zdjęć
