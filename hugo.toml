@@ -1,4 +1,4 @@
-baseurl = "http://chudywoody.github.io/"
+baseurl = "https://chudywoody.github.io/zgre_blog_repo_test/"
 title = "zgreblog"
 theme = "hugo-coder"
 languagecode = "en"
