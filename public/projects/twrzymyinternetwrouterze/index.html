@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  twrzymy · johndoe
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="John Doe">
+<meta name="description" content="![[Pasted image 20250304204829.png]]
+sudo ip addres add 192.168.1.1 dev enp0s31f6
+echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
+#sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+#sudo iptables -A FORWARD -i enp0s31f6 -o wlan0 -j ACCEPT
+#sudo iptables-save &gt; /etc/iptables/iptables.rules
+sudo nano /etc/dnsmasq.conf
+Chat gpt podpowiada:
+zidentyfikuj dostepne interfejsy:
+ip link
+moje to
+wlan0 - polaczony z ChudyWoody
+enp0s31f6 - ethernet z karty sieciowej plyty glownej
+internet przychodzi z wlan0
+router podlaczony jest przez enp0s31f6 kablem ethernet do komputera">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="twrzymy">
+  <meta name="twitter:description" content="![[Pasted image 20250304204829.png]]
+sudo ip addres add 192.168.1.1 dev enp0s31f6 echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward #sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE #sudo iptables -A FORWARD -i enp0s31f6 -o wlan0 -j ACCEPT #sudo iptables-save &gt; /etc/iptables/iptables.rules sudo nano /etc/dnsmasq.conf
+Chat gpt podpowiada:
+zidentyfikuj dostepne interfejsy: ip link moje to wlan0 - polaczony z ChudyWoody enp0s31f6 - ethernet z karty sieciowej plyty glownej
+internet przychodzi z wlan0 router podlaczony jest przez enp0s31f6 kablem ethernet do komputera">
+
+<meta property="og:url" content="http://localhost:1313/projects/twrzymyinternetwrouterze/">
+  <meta property="og:site_name" content="johndoe">
+  <meta property="og:title" content="twrzymy">
+  <meta property="og:description" content="![[Pasted image 20250304204829.png]]
+sudo ip addres add 192.168.1.1 dev enp0s31f6 echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward #sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE #sudo iptables -A FORWARD -i enp0s31f6 -o wlan0 -j ACCEPT #sudo iptables-save &gt; /etc/iptables/iptables.rules sudo nano /etc/dnsmasq.conf
+Chat gpt podpowiada:
+zidentyfikuj dostepne interfejsy: ip link moje to wlan0 - polaczony z ChudyWoody enp0s31f6 - ethernet z karty sieciowej plyty glownej
+internet przychodzi z wlan0 router podlaczony jest przez enp0s31f6 kablem ethernet do komputera">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/projects/twrzymyinternetwrouterze/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      johndoe
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:1313/projects/twrzymyinternetwrouterze/">
+          twrzymy
+        </a>
+      </h1>
+    </header>
+
+    <p>![[Pasted image 20250304204829.png]]</p>
+<p>sudo ip addres add 192.168.1.1 dev enp0s31f6
+echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
+#sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+#sudo iptables -A FORWARD -i enp0s31f6 -o wlan0 -j ACCEPT
+#sudo iptables-save &gt; /etc/iptables/iptables.rules
+sudo nano /etc/dnsmasq.conf</p>
+<p>Chat gpt podpowiada:</p>
+<p>zidentyfikuj dostepne interfejsy:
+ip link
+moje to
+wlan0 - polaczony z ChudyWoody
+enp0s31f6 - ethernet z karty sieciowej plyty glownej</p>
+<p>internet przychodzi z wlan0
+router podlaczony jest przez enp0s31f6 kablem ethernet do komputera</p>
+<p>instaluje
+sudo pacman -S iptables dnsmasq</p>
+<p>Czad podpowiada:
+wlacz NAT z pomoca iptables</p>
+<ol>
+<li>
+<p>wlacz przekazywanie pakietow
+echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward</p>
+</li>
+<li>
+<p>upewnij sie ze ustawienie jest trwale dodajac je do /etc/sysctl.conf (nie
+mialem takiego pliku, musialem go utworzyc) w tym pliku wpisalem
+net.ipv4.ip_forward=1</p>
+</li>
+<li>
+<p>skonfiguruj itables, aby przesylaly ruch z
+enp0s31f6 (eth) do wlan0 (wifi)
+sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+sudo iptables -A FORWARD -i enp0s31f6 -o wlan0 -j ACCEPT</p>
+</li>
+<li>
+<p>zapisz reguly iptables, aby byly trwale:
+sudo iptables-save &gt; /etc/iptables/iptables.rules</p>
+</li>
+</ol>
+<p>-to mi nie dzialalo, istnial juz plik iptables.rules, ktory nie dawal sie nadpisac, wiec zmienilem mu nazwe na iptables.rules.old i utworzylem nowy plik z outputem iptables-save
+-gdy spisuje zajrzalem tam jeszcze raz i sa dwa pliki iptables.rules, czyli chyba usluga sobie zrobila nowy &mdash;&ndash;DO ZWERYFIKOWANIA -nie ma nowego, przywidzialo mi sie
+Jesli iptables-service nie jest wlaczony czat powiedzial zeby sudo systemctl enable iptables i sudo systemctl start iptables</p>
+<p>Potem czat powiedzial:
+Skonfiguruj serwer DHCP za pomoca dnsmasq</p>
+<ol>
+<li>
+<p>otworz plik konfiguracyjny dnsmasq:
+sudo nano /etc/dnsmasq.conf
+-tu ta sama sytuacja co wyzej, nie dalo sie go edytowac, wiec zrobilem mv dnsmasq.conf dnsmasq.conf.old
+-tu nowy plik sie nie powtarza</p>
+</li>
+<li>
+<p>w pliku ktory utworzylem czat powiedzial zeby wpisac
+interface=eth0
+dhcp-range=192.168.1.100,162168.1.200,12h</p>
+</li>
+<li>
+<p>uruchom i wlacz dnsmasq
+sudo systemctl enable dnsmasq
+sudo systemctl start dnsmasq</p>
+</li>
+</ol>
+<ul>
+<li>tutaj mialem problem
+sudo systemctl start dnsmasq
+Job for dnsmasq.service failed because the control process exited with error code.
+See &ldquo;systemctl status dnsmasq.service&rdquo; and &ldquo;journalctl -xeu dnsmasq.service&rdquo; for details.
+[zgredek@zgredArch etc]$ systemctl status dnsmasq.service
+× dnsmasq.service - dnsmasq - A lightweight DHCP and caching DNS server
+Loaded: loaded (/usr/lib/systemd/system/dnsmasq.service; disabled; preset: disabled)
+Active: failed (Result: exit-code) since Thu 2024-11-21 03:06:21 CET; 26s ago
+Invocation: d2d3e6cf66154b14b3da9fbff0737036
+Docs: man:dnsmasq(8)
+Process: 47820 ExecStartPre=/usr/bin/dnsmasq &ndash;test (code=exited, status=0/SUCCESS)
+Process: 47821 ExecStart=/usr/bin/dnsmasq -k &ndash;enable-dbus &ndash;user=dnsmasq &ndash;pid-file (code=exited, status=2)
+Main PID: 47821 (code=exited, status=2)</li>
+</ul>
+<p>lis 21 03:06:21 zgredArch systemd[1]: dnsmasq.service: Scheduled restart job, restart counter is at 5.
+lis 21 03:06:21 zgredArch systemd[1]: dnsmasq.service: Start request repeated too quickly.
+lis 21 03:06:21 zgredArch systemd[1]: dnsmasq.service: Failed with result &rsquo;exit-code&rsquo;.
+lis 21 03:06:21 zgredArch systemd[1]: Failed to start dnsmasq - A lightweight DHCP and caching DNS server.
+[zgredek@zgredArch etc]$ journalctl -xeu dnsmasq.service
+lis 21 03:06:21 zgredArch dnsmasq[47821]: BŁĄD: nie udało się uruchomić dnsmasq-a
+lis 21 03:06:21 zgredArch systemd[1]: dnsmasq.service: Main process exited, code=exited, status=2/INVALIDARGUMENT
+░░ Subject: Proces jednostki zakończył działanie
+░░ Defined-By: systemd
+░░ Support: <a href="https://lists.freedesktop.org/mailman/listinfo/systemd-devel"  class="external-link" target="_blank" rel="noopener">https://lists.freedesktop.org/mailman/listinfo/systemd-devel</a>
+░░
+░░ Proces ExecStart= należący do jednostki dnsmasq.service zakończył działanie.
+░░
+░░ Kod wyjścia procesu: „exited”, jego stan wyjścia: 2.
+lis 21 03:06:21 zgredArch systemd[1]: dnsmasq.service: Failed with result &rsquo;exit-code&rsquo;.
+░░ Subject: Jednostka się nie powiodła
+░░ Defined-By: systemd
+░░ Support: <a href="https://lists.freedesktop.org/mailman/listinfo/systemd-devel"  class="external-link" target="_blank" rel="noopener">https://lists.freedesktop.org/mailman/listinfo/systemd-devel</a>
+░░
+░░ Jednostka dnsmasq.service przeszła do stanu „failed” (niepowodzenia)
+░░ z wynikiem „exit-code”.
+lis 21 03:06:21 zgredArch systemd[1]: Failed to start dnsmasq - A lightweight DHCP and caching DNS server.
+░░ Subject: Zadanie uruchamiania dla jednostki dnsmasq.service się nie powiodło
+░░ Defined-By: systemd
+░░ Support: <a href="https://lists.freedesktop.org/mailman/listinfo/systemd-devel"  class="external-link" target="_blank" rel="noopener">https://lists.freedesktop.org/mailman/listinfo/systemd-devel</a>
+░░
+░░ Zadanie uruchamiania dla jednostki dnsmasq.service zostało ukończone z niepowodzeniem.
+░░
+░░ Identyfikator zadania: 14102, wynik zadania: failed.
+lis 21 03:06:21 zgredArch systemd[1]: dnsmasq.service: Scheduled restart job, restart counter is at 5.
+░░ Subject: Zaplanowano automatyczne ponowne uruchamianie jednostki
+░░ Defined-By: systemd
+░░ Support: <a href="https://lists.freedesktop.org/mailman/listinfo/systemd-devel"  class="external-link" target="_blank" rel="noopener">https://lists.freedesktop.org/mailman/listinfo/systemd-devel</a>
+░░
+░░ W wyniki skonfigurowania ustawienia Restart= zaplanowano automatyczne ponowne
+░░ uruchamianie jednostki dnsmasq.service.
+lis 21 03:06:21 zgredArch systemd[1]: dnsmasq.service: Start request repeated too quickly.
+lis 21 03:06:21 zgredArch systemd[1]: dnsmasq.service: Failed with result &rsquo;exit-code&rsquo;.
+░░ Subject: Jednostka się nie powiodła
+░░ Defined-By: systemd
+░░ Support: <a href="https://lists.freedesktop.org/mailman/listinfo/systemd-devel"  class="external-link" target="_blank" rel="noopener">https://lists.freedesktop.org/mailman/listinfo/systemd-devel</a>
+░░
+░░ Jednostka dnsmasq.service przeszła do stanu „failed” (niepowodzenia)
+░░ z wynikiem „exit-code”.
+lis 21 03:06:21 zgredArch systemd[1]: Failed to start dnsmasq - A lightweight DHCP and caching DNS server.
+░░ Subject: Zadanie uruchamiania dla jednostki dnsmasq.service się nie powiodło
+░░ Defined-By: systemd
+░░ Support: <a href="https://lists.freedesktop.org/mailman/listinfo/systemd-devel"  class="external-link" target="_blank" rel="noopener">https://lists.freedesktop.org/mailman/listinfo/systemd-devel</a>
+░░
+░░ Zadanie uruchamiania dla jednostki dnsmasq.service zostało ukończone z niepowodzeniem.
+░░
+░░ Identyfikator zadania: 14212, wynik zadania: failed.</p>
+<p>&mdash;udalo sie go rozwiazac poprzez:
+czat: Sprawdź, czy port 53 jest zajęty</p>
+<p>dnsmasq używa domyślnie portu 53, który może być już zajęty przez inną usługę, np. systemd-resolved lub inny serwer DNS. Wykonaj:</p>
+<p>sudo ss -tulpn | grep :53
+output:
+udp   UNCONN 0      0               127.0.0.54:53        0.0.0.0:*       <br>
+udp   UNCONN 0      0            127.0.0.53%lo:53        0.0.0.0:*       <br>
+udp   UNCONN 0      0                  0.0.0.0:5353      0.0.0.0:*       <br>
+udp   UNCONN 0      0                  0.0.0.0:5355      0.0.0.0:*       <br>
+udp   UNCONN 0      0                     [::]:5353         [::]:*       <br>
+udp   UNCONN 0      0                     [::]:5355         [::]:*       <br>
+tcp   LISTEN 0      4096            127.0.0.54:53        0.0.0.0:*       <br>
+tcp   LISTEN 0      4096               0.0.0.0:5355      0.0.0.0:*       <br>
+tcp   LISTEN 0      4096         127.0.0.53%lo:53        0.0.0.0:*       <br>
+tcp   LISTEN 0      4096                  [::]:5355         [::]:*</p>
+<p>i dodanie do /etc/dnsmasq.conf linii
+port=5353</p>
+<p>(systemd-resolved korzysta z tego portu najwyrazniej, czat proponowal wylaczenie tej uslugi, ale nie wiem co robi wiec zmienilem port)</p>
+<p>wtedy
+sudo systemctl enable dnsmasq
+sudo systemctl start dnsmasq</p>
+<p>nie zwrocily bledu, ale
+sudo systemctl status dnsmasq
+dal output
+zgredek@zgredArch etc]$ sudo systemctl status dnsmasq
+● dnsmasq.service - dnsmasq - A lightweight DHCP and caching DNS server
+Loaded: loaded (/usr/lib/systemd/system/dnsmasq.service; enabled; preset: disabled)
+Active: active (running) since Thu 2024-11-21 03:10:12 CET; 29s ago
+Invocation: 6018f11264b94535a1d171807186c649
+Docs: man:dnsmasq(8)
+Main PID: 47985 (dnsmasq)
+Tasks: 1 (limit: 9147)
+Memory: 988K (peak: 1.6M)
+CPU: 81ms
+CGroup: /system.slice/dnsmasq.service
+└─47985 /usr/bin/dnsmasq -k &ndash;enable-dbus &ndash;user=dnsmasq &ndash;pid-file</p>
+<p>lis 21 03:10:13 zgredArch dnsmasq-dhcp[47985]: żądanie DHCP odebrano na interfejsie enp0s31f6, który nie ma adresu
+lis 21 03:10:15 zgredArch dnsmasq-dhcp[47985]: żądanie DHCP odebrano na interfejsie enp0s31f6, który nie ma adresu
+lis 21 03:10:18 zgredArch dnsmasq-dhcp[47985]: żądanie DHCP odebrano na interfejsie enp0s31f6, który nie ma adresu
+lis 21 03:10:21 zgredArch dnsmasq-dhcp[47985]: żądanie DHCP odebrano na interfejsie enp0s31f6, który nie ma adresu
+lis 21 03:10:24 zgredArch dnsmasq-dhcp[47985]: żądanie DHCP odebrano na interfejsie enp0s31f6, który nie ma adresu
+lis 21 03:10:27 zgredArch dnsmasq-dhcp[47985]: żądanie DHCP odebrano na interfejsie enp0s31f6, który nie ma adresu
+lis 21 03:10:31 zgredArch dnsmasq-dhcp[47985]: żądanie DHCP odebrano na interfejsie enp0s31f6, który nie ma adresu
+lis 21 03:10:33 zgredArch dnsmasq-dhcp[47985]: żądanie DHCP odebrano na interfejsie enp0s31f6, który nie ma adresu
+lis 21 03:10:36 zgredArch dnsmasq-dhcp[47985]: żądanie DHCP odebrano na interfejsie enp0s31f6, który nie ma adresu
+lis 21 03:10:39 zgredArch dnsmasq-dhcp[47985]: żądanie DHCP odebrano na interfejsie enp0s31f6, który nie ma adresu</p>
+<p>wiec przypisalem ip mojemu portowi ethernet
+sudo ip addr add 192.168.1.1/24 dev enp0s31f6
+sudo ip link set enp0s31f6 up</p>
+<p>wtedy restart i status pokazaly normalne outputy</p>
+<ol start="5">
+<li>Podlacz kabel ethernet miedzy komputerem a portem LAN routera
+router powinien automatycznie uzyskac internet dzieki NAT i serwerowi DHCP skonfigurowanym na komputerze.</li>
+</ol>
+<p>&mdash;&ndash; no wiec wlaczylem router i z laptopa polaczylem sie z routerem haslami z naklejki,
+kiedys gdy tego probowalem nie pozwalal (router) skonfigurowac, a dzis pozwolil, nawet pokazuje ze ma polaczenie z internetem, ale yt nie otwiera
+przechodze wiec do sekcji porad GPT Testowanie i debugowanie</p>
+<ol start="6">
+<li>Testowanie i debugowanie
+upewnij sie ze NAT dziala
+sudo iptables -t nat -L</li>
+</ol>
+<p>sprawdz logi dnsmasq, jesli DHCP nie dziala
+sudo journalctl -u dnsmasq</p>
+<p>kolejna sesja z czatem</p>
+<p>Konfiguracja dnsmasq</p>
+<p>Plik dnsmasq.conf musisz edytować, aby ustawić serwer DHCP dla interfejsu Ethernet (enp0s31f6). Oto kroki:</p>
+<pre><code>Otwórz plik:
+</code></pre>
+<p>sudo nano /etc/dnsmasq.conf</p>
+<p>Dodaj/zmodyfikuj następujące linie:</p>
+<h1 id="interfejs-na-którym-działa-serwer-dhcp">
+  Interfejs, na którym działa serwer DHCP
+  <a class="heading-link" href="#interfejs-na-kt%c3%b3rym-dzia%c5%82a-serwer-dhcp">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>interface=enp0s31f6</p>
+<h1 id="zakres-adresów-ip-przydzielanych-urządzeniom">
+  Zakres adresów IP przydzielanych urządzeniom
+  <a class="heading-link" href="#zakres-adres%c3%b3w-ip-przydzielanych-urz%c4%85dzeniom">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>dhcp-range=192.168.2.10,192.168.2.100,12h</p>
+<h1 id="adres-bramy-domyślnej-twój-komputer-bo-to-on-przekazuje-internet">
+  Adres bramy domyślnej (twój komputer, bo to on przekazuje internet)
+  <a class="heading-link" href="#adres-bramy-domy%c5%9blnej-tw%c3%b3j-komputer-bo-to-on-przekazuje-internet">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>dhcp-option=3,192.168.2.1</p>
+<h1 id="serwery-dns-możesz-użyć-google-lub-innych">
+  Serwery DNS (możesz użyć Google lub innych)
+  <a class="heading-link" href="#serwery-dns-mo%c5%bcesz-u%c5%bcy%c4%87-google-lub-innych">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>dhcp-option=6,8.8.8.8,8.8.4.4</p>
+<h1 id="nie-działaj-jako-serwer-dns-na-innych-interfejsach">
+  Nie działaj jako serwer DNS na innych interfejsach
+  <a class="heading-link" href="#nie-dzia%c5%82aj-jako-serwer-dns-na-innych-interfejsach">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>bind-interfaces</p>
+<p>Włącz i uruchom dnsmasq</p>
+<pre><code>Włącz usługę dnsmasq:
+</code></pre>
+<p>sudo systemctl enable dnsmasq
+sudo systemctl start dnsmasq</p>
+<p>sudo systemctl status dnsmasq
+● dnsmasq.service - dnsmasq - A lightweight DHCP and caching DNS server
+● dnsmasq.service - dnsmasq - A lightweight DHCP and caching DNS server
+Loaded: loaded (/usr/lib/systemd/system/dnsmasq.service; enabled; preset: disabled)
+Active: active (running) since Thu 2024-11-21 03:15:45 CET; 2h 23min ago
+Invocation: cb363a0c0902486185d3ae855ec92235
+Docs: man:dnsmasq(8)
+Main PID: 48303 (dnsmasq)
+Tasks: 1 (limit: 9147)
+Memory: 1.1M (peak: 1.8M)
+CPU: 198ms
+CGroup: /system.slice/dnsmasq.service
+└─48303 /usr/bin/dnsmasq -k &ndash;enable-dbus &ndash;user=dnsmasq &ndash;pid-file</p>
+<p>lis 21 04:56:43 zgredArch dnsmasq-dhcp[48303]: DHCPREQUEST(enp0s31f6) 192.168.1.197 78:98:e8:63:51:a1
+lis 21 04:56:43 zgredArch dnsmasq-dhcp[48303]: DHCPACK(enp0s31f6) 192.168.1.197 78:98:e8:63:51:a1 dlinkrouter519E
+lis 21 04:57:19 zgredArch dnsmasq-dhcp[48303]: DHCPDISCOVER(enp0s31f6) 78:98:e8:63:51:a1
+lis 21 04:57:19 zgredArch dnsmasq-dhcp[48303]: DHCPOFFER(enp0s31f6) 192.168.1.197 78:98:e8:63:51:a1
+lis 21 04:57:19 zgredArch dnsmasq-dhcp[48303]: DHCPREQUEST(enp0s31f6) 192.168.1.197 78:98:e8:63:51:a1
+lis 21 04:57:19 zgredArch dnsmasq-dhcp[48303]: DHCPACK(enp0s31f6) 192.168.1.197 78:98:e8:63:51:a1 dlinkrouter519E
+lis 21 05:01:55 zgredArch dnsmasq-dhcp[48303]: DHCPDISCOVER(enp0s31f6) 78:98:e8:63:51:a1
+lis 21 05:01:55 zgredArch dnsmasq-dhcp[48303]: DHCPOFFER(enp0s31f6) 192.168.1.197 78:98:e8:63:51:a1
+lis 21 05:01:55 zgredArch dnsmasq-dhcp[48303]: DHCPREQUEST(enp0s31f6) 192.168.1.197 78:98:e8:63:51:a1
+lis 21 05:01:55 zgredArch dnsmasq-dhcp[48303]: DHCPACK(enp0s31f6) 192.168.1.197 78:98:e8:63:51:a1 dlinkrouter51</p>
+<p>zainstalowalem narzedzie tcpdump
+sudo pacman -S tcpdump</p>
+<p>i uruchomilem
+sudo tcpdump -i enp0s31f6</p>
+<p>i widzialem ze przesyla toco mam otwarte na kompie (disneyplus i strona chata)
+ale laptop polaczony z routerem wciaz nie mial internetu</p>
+<p>no to od poczatku spis danych</p>
+<p>ip addres na kompie
+3: enp0s31f6: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc fq_codel state UP group default qlen 1000
+link/ether 2c:56:dc:d3:d9:ab brd ff:ff:ff:ff:ff:ff
+inet 192.168.1.1/24 scope global enp0s31f6
+valid_lft forever preferred_lft forever
+inet 192.168.2.1/32 scope global enp0s31f6
+valid_lft forever preferred_lft forever</p>
+<p>sprawdzilem iptables i byly ok</p>
+<p>widac w trakcie konfiguracji nadalem mu dwa adresy, a na routerze wczesniej zmienilem
+default gateway i primary dns sercver na 192.168.2.1</p>
+<p>gdy zmienilem ustawienia na routerze na
+static ip
+ip addres na 192.168.1.2
+subnet mask 255.255.255.0
+default gateway 192.168.1.1
+primary dns server 8.8.8.8</p>
+<p>to zaczelo dzialac!!!!! :D:D:D:D:D:D:D::D</p>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2025
+     John Doe 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>
