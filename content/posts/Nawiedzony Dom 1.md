@@ -33,17 +33,17 @@ Rano odwiedziliście komisariat policji w dzielnicy która was inetesuje. Sława
 ![thomas](../thomas.png)
 ![[thomas.png]]
 
-Akta dotyczą tajnego nalotu na organizację nazywaną Kaplicą Tajemnic. Powodem wszczęcia śledztwa miało być aresztowanie Jamesa Wilsona, lokalnego koordynatora załadunku frachtowców w dokach, który miał udostępniać zasoby portu szajce handlarzy ludźmi. W ramach przesłuchań udało się ustalić kontrahentów swojej grupy przestępczej, wśród których znajdowali się członkowie Kaplicy Tajemnic. 
+Akta dotyczą tajnego nalotu na organizację nazywaną Kaplicą Tajemnic. Powodem wszczęcia śledztwa miało być aresztowanie Jamesa Wilsona, lokalnego koordynatora załadunku frachtowców w dokach, który miał udostępniać zasoby portu szajce handlarzy ludźmi. W ramach przesłuchań udało się ustalić kontrahentów grupy przestępczej, wśród których znajdowali się członkowie Kaplicy Tajemnic. 
 Śledztwo wykazało, że stowarzyszenie założono w 1850 roku, według dokumentów miało mieć gnostyczny charakter, członkowie mieli poszukiwać wiedzy poprzez medytację. Pierwszym przywódcą był Walter Corbitt (zawód handlarz chemią), zmarły w 1866 roku, po którym schedę przejął Michael Thomas. 
 Z dokumentów wynika, że organizacja utrzymywała kontakt z Uniwersytetem Arkham finansując niektóre wyprawy archeologiczne na bliski wschód (odnośnik do sprawy o nielegalnym obrocie artefaktami). 
-Nalotu dokonano 25 lipca 1912, w trakcie zginęło 3 policjantów i 17 członków stowarzyszenia (stawiali aktywny opór, byli uzbrojeni). Podczas strzelaniny doszło do pożaru, w wyniku którego budynek stowarzyszenia spłonął. 
+Nalotu dokonano 25 lipca 1912, w trakcie zginęło 3 policjantów (Bob Clark, Bruce Derleth, Mark Smith) i 17 członków stowarzyszenia (stawiali aktywny opór, byli uzbrojeni). Podczas strzelaniny doszło do pożaru, w wyniku którego budynek stowarzyszenia spłonął. 
 W wyniku akcji aresztowano 21 członków na miejscu, oraz kolejnych 32 w wyniku dalszego postępowania. 
 W wyniku postępowania karnego skazano ośmiu członków, w tym przewodniczącego M. Thomasa. 
 
 W aktach znajdują się odnośniki do spraw skazanych, większość odpowiedziała za udział w handlu ludźmi, część za nielegalny obrót zabytkami. 
 Przywódcę skazano na 40 lat więzienia. 
 Poza handlem ludźmi udowodniono mu nielegalny obrót zabytkami. 
-Są tam też sygnatury spraw o morderstwo z notatką, że skazany uciekł z więzienia. 
+Są tam też sygnatury niezakończonych spraw o morderstwo z notatką, że skazany uciekł z więzienia. 
 
 Brakuje listy nieskazanych.
 Zaginęły też strony o wizji lokalnej kryminalnych, z urywków akapitów na sąsiadujących stronach da się wywnioskować, że na miejscu było wielkie palenisko, oraz szczątki niezidentyfikowanych osób (autopsji brak).
