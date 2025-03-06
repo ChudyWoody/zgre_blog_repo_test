@@ -30,10 +30,10 @@ Proboszcz opowiedział to co już wiedzieliście, że Marcariowie byli pobożnym
 
 Rano odwiedziliście komisariat policji w dzielnicy która was inetesuje. Sława Lou i zmyślna dywersja Marco pozwoliła wam zjednać sobie funkcjonariuszy i urzędników tam pracujących. Dzięki cieknącemu kaloryferowi niespodziewanie udało się wam pozyskać utajnione akta w których pojawiło się nazwisko Michael Thomas, który miał być przywódcą ugrupowania zwanego Kaplicą Tajemnic.
 
-
 ![thomas](../thomas.png)
+![[thomas.png]]
 
-Akta dotyczą tajnego nalotu na organizację nazywaną Kaplicą Tajemnic. Powodem wszczęcia śledztwa miało być aresztowanie Jamesa Wilsona, lokalnego kierownika do spraw frachtowców w dokach, który miał udostępniać zasoby portu szajce handlarzy ludźmi. W ramach przesłuchań udało się ustalić kontrahentów swojej grupy przestępczej, wśród których znajdowali się członkowie Kaplicy Tajemnic. 
+Akta dotyczą tajnego nalotu na organizację nazywaną Kaplicą Tajemnic. Powodem wszczęcia śledztwa miało być aresztowanie Jamesa Wilsona, lokalnego koordynatora załadunku frachtowców w dokach, który miał udostępniać zasoby portu szajce handlarzy ludźmi. W ramach przesłuchań udało się ustalić kontrahentów swojej grupy przestępczej, wśród których znajdowali się członkowie Kaplicy Tajemnic. 
 Śledztwo wykazało, że stowarzyszenie założono w 1850 roku, według dokumentów miało mieć gnostyczny charakter, członkowie mieli poszukiwać wiedzy poprzez medytację. Pierwszym przywódcą był Walter Corbitt (zawód handlarz chemią), zmarły w 1866 roku, po którym schedę przejął Michael Thomas. 
 Z dokumentów wynika, że organizacja utrzymywała kontakt z Uniwersytetem Arkham finansując niektóre wyprawy archeologiczne na bliski wschód (odnośnik do sprawy o nielegalnym obrocie artefaktami). 
 Nalotu dokonano 25 lipca 1912, w trakcie zginęło 3 policjantów i 17 członków stowarzyszenia (stawiali aktywny opór, byli uzbrojeni). Podczas strzelaniny doszło do pożaru, w wyniku którego budynek stowarzyszenia spłonął. 
