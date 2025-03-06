@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/zgre_blog_repo_test/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=zgre_blog_repo_test/livereload" data-no-instant defer></script>
   <title>
   Robiemy zgreblog · zgreblog
 </title>
@@ -50,7 +50,7 @@ mkdir ~/python_envs/hugo_website python3 -m venv ~/python_envs/hugo_website sour
 Teraz ściągnę do tego środowiska hugo:
 pip install hugo # sprawdzę czy jest: hugo version # powinien zwrócić komunikat o tym że działa przez pythona czy coś. Teraz trzeba stworzyć folder, w którym będzie nasza stronka. Robimy to zanim ją zainicjujemy, bo chcemy ją potem udostępniać przez GitHub Pages, więc musimy w tym folderze zainicjować repozytorium gita.">
 
-<meta property="og:url" content="//localhost:1313/posts/robimy-zgreblog/">
+<meta property="og:url" content="http://localhost:1313/zgre_blog_repo_test/posts/robimy-zgreblog/">
   <meta property="og:site_name" content="zgreblog">
   <meta property="og:title" content="Robiemy zgreblog">
   <meta property="og:description" content="Chcemy zrobić blog z notatek w Obsidianie.
@@ -67,7 +67,7 @@ pip install hugo # sprawdzę czy jest: hugo version # powinien zwrócić komunik
 
 
 
-<link rel="canonical" href="//localhost:1313/posts/robimy-zgreblog/">
+<link rel="canonical" href="http://localhost:1313/zgre_blog_repo_test/posts/robimy-zgreblog/">
 
 
 <link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -77,7 +77,7 @@ pip install hugo # sprawdzę czy jest: hugo version # powinien zwrócić komunik
 
   
   
-  <link rel="stylesheet" href="/css/coder.css" media="screen">
+  <link rel="stylesheet" href="/zgre_blog_repo_test/css/coder.css" media="screen">
 
 
 
@@ -87,7 +87,7 @@ pip install hugo # sprawdzę czy jest: hugo version # powinien zwrócić komunik
   
     
     
-    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+    <link rel="stylesheet" href="/zgre_blog_repo_test/css/coder-dark.css" media="screen">
   
 
 
@@ -135,7 +135,7 @@ pip install hugo # sprawdzę czy jest: hugo version # powinien zwrócić komunik
     <nav class="navigation">
   <section class="container">
     
-    <a class="navigation-title" href="//localhost:1313/">
+    <a class="navigation-title" href="http://localhost:1313/zgre_blog_repo_test/">
       zgreblog
     </a>
     
@@ -148,19 +148,19 @@ pip install hugo # sprawdzę czy jest: hugo version # powinien zwrócić komunik
         
           
             <li class="navigation-item">
-              <a class="navigation-link " href="/posts/">Blog</a>
+              <a class="navigation-link " href="/zgre_blog_repo_test/posts/">Blog</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link " href="/about/">About</a>
+              <a class="navigation-link " href="/zgre_blog_repo_test/about/">About</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link " href="/projects/">Projects</a>
+              <a class="navigation-link " href="/zgre_blog_repo_test/projects/">Projects</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link " href="/contact/">Contact</a>
+              <a class="navigation-link " href="/zgre_blog_repo_test/contact/">Contact</a>
             </li>
           
         
@@ -178,7 +178,7 @@ pip install hugo # sprawdzę czy jest: hugo version # powinien zwrócić komunik
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="//localhost:1313/posts/robimy-zgreblog/">
+            <a class="title-link" href="http://localhost:1313/zgre_blog_repo_test/posts/robimy-zgreblog/">
               Robiemy zgreblog
             </a>
           </h1>
@@ -260,7 +260,7 @@ pip install hugo # sprawdzę czy jest: hugo version # powinien zwrócić komunik
 <p>gdzie &ldquo;sourcepath&rdquo; to lokalizacja postów w Obsidianie, które chcemy na stronce, a &ldquo;destinationpath&rdquo; to lokalizacja postów w plikach stronki. Opcja -a to archive - kopiuje z symlinkami i uprawnieniami i innymi metadanymi, opcja -v to verbose - żeby nam powiedział czy wszystko spoko i co jest niespoko, opcja &ndash;delete - usunie w destinationpath to czego nie ma w sourcepath. Dla mnie to będzie:</p>
 <pre><code>rsync -av --delete /home/zgredek/Dokumenty/Obsidian_Vault/Inbox/*.md /home/zgredek/Programowanie/python_envs/hugo_obsidian_website/zgre_blog_test/content/posts
 </code></pre>
-<p>!<img src="/images/Pasted%20image%2020250304230039.png" alt="Pasted image 20250304230039">
+<p>![[Pasted image 20250304230039.png]]
 Warto w ogóle sobie wcześniej przygotować kilka testowych postów, najlepiej ze zdjęciami, żeby sprawdzić jak to się sprawuje. A sprawuje się średnio ze zdjęciami, bo Obsidian trzyma załączniki tam gdzie mu się powie, z reguły w folderze wyszczególnionym w ustawieniach przez użytkownika (tak polecam mieć skonfigurowane) i w samych notatkach ma wewnętrzne swoje linki do załączników. Trzeba to jakoś obejść, a pythonowe obejście napisał networkchuck. Ja je troszeńkę pozmieniam, bo w chuckowym skrypcie zostawały wykrzykniki przed zdjęciami.
 Pamiętaj że dla pythona ważne są tabulatory, trzeba je usunąć, bo w tej notce są po dwa przed każdą &ldquo;zerową&rdquo; kolumną.</p>
 <pre tabindex="0"><code class="language-#" data-lang="#">
@@ -317,7 +317,7 @@ content = file.read()
 
 # Step 2: Find all image links in the format ![Image Description](/images/Pasted%20image%20...%20.png)
 
-## w odczytanym pliku z postem w zmiennej content znajduje wewnętrzne linki obsidiana do zdjęć i wpisuje je do zmiennej images, mają postać: !![Pasted image 20250304204829](/images/Pasted%20image%2020250304204829.png)
+## w odczytanym pliku z postem w zmiennej content znajduje wewnętrzne linki obsidiana do zdjęć i wpisuje je do zmiennej images, mają postać: ![[Pasted image 20250304204829.png]]
 
 images = re.findall(r&#39;\[\[([^]]*\.png)\]\]&#39;, content)
 
@@ -497,7 +497,7 @@ Wtedy można kliknąć na ten nasz workflow, pokażą się boksy &ldquo;build&rd
 
   
   
-  <script src="/js/coder.js"></script>
+  <script src="/zgre_blog_repo_test/js/coder.js"></script>
   
 
   

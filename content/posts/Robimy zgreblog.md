@@ -71,7 +71,7 @@ Teraz zajmiemy się synchronizacją naszej stronki z obsidianem. Posłuży nam d
 gdzie "sourcepath" to lokalizacja postów w Obsidianie, które chcemy na stronce, a "destinationpath" to lokalizacja postów w plikach stronki. Opcja -a to archive - kopiuje z symlinkami i uprawnieniami i innymi metadanymi, opcja -v to verbose - żeby nam powiedział czy wszystko spoko i co jest niespoko, opcja --delete - usunie w destinationpath to czego nie ma w sourcepath. Dla mnie to będzie:
 
 	rsync -av --delete /home/zgredek/Dokumenty/Obsidian_Vault/Inbox/*.md /home/zgredek/Programowanie/python_envs/hugo_obsidian_website/zgre_blog_test/content/posts
-!![Pasted image 20250304230039](/images/Pasted%20image%2020250304230039.png)
+![[Pasted image 20250304230039.png]]
 Warto w ogóle sobie wcześniej przygotować kilka testowych postów, najlepiej ze zdjęciami, żeby sprawdzić jak to się sprawuje. A sprawuje się średnio ze zdjęciami, bo Obsidian trzyma załączniki tam gdzie mu się powie, z reguły w folderze wyszczególnionym w ustawieniach przez użytkownika (tak polecam mieć skonfigurowane) i w samych notatkach ma wewnętrzne swoje linki do załączników. Trzeba to jakoś obejść, a pythonowe obejście napisał networkchuck. Ja je troszeńkę pozmieniam, bo w chuckowym skrypcie zostawały wykrzykniki przed zdjęciami. 
 Pamiętaj że dla pythona ważne są tabulatory, trzeba je usunąć, bo w tej notce są po dwa przed każdą "zerową" kolumną. 
 
@@ -130,7 +130,7 @@ content = file.read()
 
 # Step 2: Find all image links in the format ![Image Description](/images/Pasted%20image%20...%20.png)
 
-## w odczytanym pliku z postem w zmiennej content znajduje wewnętrzne linki obsidiana do zdjęć i wpisuje je do zmiennej images, mają postać: !![Pasted image 20250304204829](/images/Pasted%20image%2020250304204829.png)
+## w odczytanym pliku z postem w zmiennej content znajduje wewnętrzne linki obsidiana do zdjęć i wpisuje je do zmiennej images, mają postać: ![[Pasted image 20250304204829.png]]
 
 images = re.findall(r'\[\[([^]]*\.png)\]\]', content)
 
