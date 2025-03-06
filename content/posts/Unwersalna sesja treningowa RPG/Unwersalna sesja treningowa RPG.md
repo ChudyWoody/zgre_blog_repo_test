@@ -1,5 +1,7 @@
 ---
 title: Uniwersalna sesja tren RPG
+assets: image
+resources: image
 ---
 
 
@@ -17,4 +19,4 @@ Celemm takiej sesji jest przetrenowanie mechaniki nowego RPG ktory sie ogarnia.
 
 
 
-!![Pasted image 20250304204753](/images/Pasted%20image%2020250304204753.png)
+![Pastedimage20250304204753.png](../Pastedimage20250304204753.png)

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  Robiemy zgreblog · zgreblog
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="ChudWoody">
+<meta name="description" content="Chcemy zrobić blog z notatek w Obsidianie.
+Do tego potrzebne są już zainstalowane:
+
+Obsidian
+python3
+git
+Go
+Hugo
+
+Ja będę robił wszystko w wirtualnym środowisku pythona. Dlaczego? Bo tak.
+Najpierw stworzę sobie venv:
+	mkdir ~/python_envs/hugo_website
+	python3 -m venv ~/python_envs/hugo_website
+	source ~/python_envs/hugo_website/bin/activate
+
+No i mam.
+Teraz ściągnę do tego środowiska hugo:
+	pip install hugo
+	# sprawdzę czy jest:
+	hugo version
+	# powinien zwrócić komunikat o tym że działa przez pythona czy coś. 
+
+Teraz trzeba stworzyć folder, w którym będzie nasza stronka. Robimy to zanim ją zainicjujemy, bo chcemy ją potem udostępniać przez GitHub Pages, więc musimy w tym folderze zainicjować repozytorium gita.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Robiemy zgreblog">
+  <meta name="twitter:description" content="Chcemy zrobić blog z notatek w Obsidianie.
+Do tego potrzebne są już zainstalowane:
+Obsidian python3 git Go Hugo Ja będę robił wszystko w wirtualnym środowisku pythona. Dlaczego? Bo tak.
+Najpierw stworzę sobie venv:
+mkdir ~/python_envs/hugo_website python3 -m venv ~/python_envs/hugo_website source ~/python_envs/hugo_website/bin/activate No i mam.
+Teraz ściągnę do tego środowiska hugo:
+pip install hugo # sprawdzę czy jest: hugo version # powinien zwrócić komunikat o tym że działa przez pythona czy coś. Teraz trzeba stworzyć folder, w którym będzie nasza stronka. Robimy to zanim ją zainicjujemy, bo chcemy ją potem udostępniać przez GitHub Pages, więc musimy w tym folderze zainicjować repozytorium gita.">
+
+<meta property="og:url" content="//localhost:1313/posts/robimy-zgreblog/">
+  <meta property="og:site_name" content="zgreblog">
+  <meta property="og:title" content="Robiemy zgreblog">
+  <meta property="og:description" content="Chcemy zrobić blog z notatek w Obsidianie.
+Do tego potrzebne są już zainstalowane:
+Obsidian python3 git Go Hugo Ja będę robił wszystko w wirtualnym środowisku pythona. Dlaczego? Bo tak.
+Najpierw stworzę sobie venv:
+mkdir ~/python_envs/hugo_website python3 -m venv ~/python_envs/hugo_website source ~/python_envs/hugo_website/bin/activate No i mam.
+Teraz ściągnę do tego środowiska hugo:
+pip install hugo # sprawdzę czy jest: hugo version # powinien zwrócić komunikat o tym że działa przez pythona czy coś. Teraz trzeba stworzyć folder, w którym będzie nasza stronka. Robimy to zanim ją zainicjujemy, bo chcemy ją potem udostępniać przez GitHub Pages, więc musimy w tym folderze zainicjować repozytorium gita.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+
+
+
+<link rel="canonical" href="//localhost:1313/posts/robimy-zgreblog/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="//localhost:1313/">
+      zgreblog
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="//localhost:1313/posts/robimy-zgreblog/">
+              Robiemy zgreblog
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="0001-01-01T00:00:00Z">
+                January 1, 0001
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              7-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>Chcemy zrobić blog z notatek w Obsidianie.</p>
+<p>Do tego potrzebne są już zainstalowane:</p>
+<ul>
+<li>Obsidian</li>
+<li>python3</li>
+<li>git</li>
+<li>Go</li>
+<li>Hugo</li>
+</ul>
+<p>Ja będę robił wszystko w wirtualnym środowisku pythona. Dlaczego? Bo tak.</p>
+<p>Najpierw stworzę sobie venv:</p>
+<pre><code>	mkdir ~/python_envs/hugo_website
+	python3 -m venv ~/python_envs/hugo_website
+	source ~/python_envs/hugo_website/bin/activate
+</code></pre>
+<p>No i mam.</p>
+<p>Teraz ściągnę do tego środowiska hugo:</p>
+<pre><code>	pip install hugo
+	# sprawdzę czy jest:
+	hugo version
+	# powinien zwrócić komunikat o tym że działa przez pythona czy coś. 
+</code></pre>
+<p>Teraz trzeba stworzyć folder, w którym będzie nasza stronka. Robimy to zanim ją zainicjujemy, bo chcemy ją potem udostępniać przez GitHub Pages, więc musimy w tym folderze zainicjować repozytorium gita.</p>
+<pre><code>	mkdir zgre_blog_test
+	cd zgre_blog_test
+	git init
+	git config --global user.name &quot;ChudyWoody&quot;
+	git config --global user.email &quot;zgredek94@gmail.com&quot;
+</code></pre>
+<p>Trzeba oczywiście podmienić na swoje configi gita.</p>
+<p>Teraz trzeba zainicjować stronkę przy pomocy hugo. Idę do swojego folderu z venv i to robię:</p>
+<pre><code>	cd ~/python_envs/hugo_website
+	hugo new site ../zgre_blog_test --force
+</code></pre>
+<p>Stworzył się nowy folder o nazwie zgre_blog_test, w którym jest prawie wszystko potrzebne do dalszej pracy. Żeby stronka jakoś wyglądała trzeba ściągnąć  hugo-theme i potem dostosować go do swoich potrzeb. Mi się podoba taki:
+<a href="https://themes.gohugo.io/themes/hugo-coder"  class="external-link" target="_blank" rel="noopener">https://themes.gohugo.io/themes/hugo-coder</a></p>
+<p>Najlepiej zrobić to dodając submoduł gita (czymkolwiek to jest,ale tak doradzają w tutorialach hugo i networkchucka)</p>
+<pre><code>	git submodule add -f https://github.com/luizdepra/hugo-coder.git themes/hugo-coder
+</code></pre>
+<p>Teraz jak już mamy ściągnięty theme w odpowiednim miejscu trzeba skopiować sobie jego konfigurację do naszego &hellip;/zgre_blog_test/hugo.toml</p>
+<pre><code>	cp ~/python_envs/hugo_python_website/zgre_blog_test/themes/hugo-coder/exampleSite/hugo.toml ~/python_envs/hugo_python_website/zgre_blog_test/hugo.toml
+</code></pre>
+<p>Sprawdźmy czy działa:</p>
+<pre><code>	hugo server -t themename
+	hugo serve # w folderze zgre_blog_test
+	# No i działa!
+</code></pre>
+<p>Co nie będzie działać to podstronki, dlatego że w folderze zgre_blog_test/content nic nie mamy. Żeby działały &ldquo;Blog&rdquo; i &ldquo;Projects&rdquo; trzeba tam utworzyć posts i projects itd, ale treść do nich doda się później:</p>
+<pre><code>	mkdir ./content/posts ./content/projects ./content/about ./content/contact
+</code></pre>
+<p>Teraz zajmiemy się synchronizacją naszej stronki z obsidianem. Posłuży nam do tego komenda rsync:</p>
+<pre><code>	rsync -av --delete &quot;sourcepath&quot; &quot;destinationpath&quot;
+</code></pre>
+<p>gdzie &ldquo;sourcepath&rdquo; to lokalizacja postów w Obsidianie, które chcemy na stronce, a &ldquo;destinationpath&rdquo; to lokalizacja postów w plikach stronki. Opcja -a to archive - kopiuje z symlinkami i uprawnieniami i innymi metadanymi, opcja -v to verbose - żeby nam powiedział czy wszystko spoko i co jest niespoko, opcja &ndash;delete - usunie w destinationpath to czego nie ma w sourcepath. Dla mnie to będzie:</p>
+<pre><code>rsync -av --delete /home/zgredek/Dokumenty/Obsidian_Vault/Inbox/*.md /home/zgredek/Programowanie/python_envs/hugo_obsidian_website/zgre_blog_test/content/posts
+</code></pre>
+<p>!<img src="/images/Pasted%20image%2020250304230039.png" alt="Pasted image 20250304230039">
+Warto w ogóle sobie wcześniej przygotować kilka testowych postów, najlepiej ze zdjęciami, żeby sprawdzić jak to się sprawuje. A sprawuje się średnio ze zdjęciami, bo Obsidian trzyma załączniki tam gdzie mu się powie, z reguły w folderze wyszczególnionym w ustawieniach przez użytkownika (tak polecam mieć skonfigurowane) i w samych notatkach ma wewnętrzne swoje linki do załączników. Trzeba to jakoś obejść, a pythonowe obejście napisał networkchuck. Ja je troszeńkę pozmieniam, bo w chuckowym skrypcie zostawały wykrzykniki przed zdjęciami.
+Pamiętaj że dla pythona ważne są tabulatory, trzeba je usunąć, bo w tej notce są po dwa przed każdą &ldquo;zerową&rdquo; kolumną.</p>
+<pre tabindex="0"><code class="language-#" data-lang="#">
+  
+  
+
+import os
+
+import re
+
+import shutil
+
+  
+
+# Paths:
+
+## posts_dir ma być lokalizacją z postami do udostępnienia! w folderze stronki, nie w Obsidianie!
+
+posts_dir = &#34;/home/zgredek/Programowanie/python_envs/hugo_obsidian_website/zgre_blog_test/content/posts&#34;
+
+## folder z załącznikami Obsidiana
+
+attachments_dir = &#34;/home/zgredek/Dokumenty/Obsidian_Vault/zz Assets&#34;
+
+## folder stronki ze zdjęciami
+
+static_images_dir = &#34;/home/zgredek/Programowanie/python_envs/hugo_obsidian_website/zgre_blog_test/static/images&#34;
+
+  
+
+#Step 1: Process each markdown file in the posts directory
+
+## Pobiera nazwy plików w lokalizacji postów w folderze stronki i tworzy ich listę w zmiennej filename
+
+for filename in os.listdir(posts_dir):
+
+## jeżeli plik się kończy na &#34;.md&#34; to...
+
+if filename.endswith(&#34;.md&#34;):
+
+## ...to tworzy pełną ścieżkę do pliku (dodaje nazwę pliku do ścieżki z postami)
+
+filepath = os.path.join(posts_dir, filename)
+
+## otwiera plik z postem w trybie read reprezentowany przez zmienną file
+
+with open(filepath, &#34;r&#34;) as file:
+
+## odczytuje całą zawartość tego pliku jako string w zmiennej content
+
+content = file.read()
+
+  
+
+# Step 2: Find all image links in the format ![Image Description](/images/Pasted%20image%20...%20.png)
+
+## w odczytanym pliku z postem w zmiennej content znajduje wewnętrzne linki obsidiana do zdjęć i wpisuje je do zmiennej images, mają postać: !![Pasted image 20250304204829](/images/Pasted%20image%2020250304204829.png)
+
+images = re.findall(r&#39;\[\[([^]]*\.png)\]\]&#39;, content)
+
+## ta linia bierze każde znalezione zdjęcie i...
+
+for image in images:
+
+# Prepare the Markdown-compatible link with %20 replacing spaces
+
+## i podmienia adres zdjęcia na taki, który zostanie rozpoznany przez Hugo przy kompilowaniu strony - zamienia spacje na %20 i podaje adres zdjęcia w folderze images (w static)
+
+markdown_image = f&#34;![{image.replace(&#39;.png&#39;, &#39;&#39;).replace(&#39;_&#39;, &#39; &#39;)}](/images/{image.replace(&#39; &#39;, &#39;%20&#39;)})&#34;
+
+## a następnie podmienia w zmiennej content (treść posta) frazę [[{nazwazdjęcia}]] na to co wygenerował powyżej
+
+content = content.replace(f&#34;[[{image}]]&#34;, markdown_image)
+
+# Step 4: Copy the image to the Hugo static directory if it exists
+
+## tworzy zmienną z adresem źródła, z którego Hugo będzie brał zdjęcia do kompilacji /source/images/nazwazdjęcia
+
+image_source = os.path.join(attachments_dir, image)
+
+## sprawdza czy ścieżka ze źródłem zdjęć (source/images) istnieje
+
+if os.path.exists(image_source):
+
+## kopiuje z folderu Obsidiana zdjęcia do /source/image
+
+shutil.copy(image_source, static_images_dir)
+
+## otwiera plik z postem w trybie write jako zmienną file
+
+with open(filepath, &#34;w&#34;) as file:
+
+## zapisuje w zmiennej file (otwartym poście) podmienioną zawartość pliku z prawidłowymi adresami czytelnymi dla Hugo
+
+file.write(content)
+
+print(&#34;Markdown files processed and images copied successfully&#34;)
+</code></pre><p>Sprawdźmy czy działa:</p>
+<pre><code>hugo serve -t hugo-coder
+</code></pre>
+<p>I w przeglądarce localhost:1313.
+Powinno działać, jeśli nie działa to usuń zawartość folderu public, żeby hugo na nowo wygenerował stronkę. Jeśli się tego nie zrobi to samo generowanie na nowo nie pomaga.</p>
+<p>Jadymy dalyj.</p>
+<p>Teraz trzeba przygotować Githuba.
+Załóż konto i tak dalej. Stwórz nowe repozytorium, np o nazwie bloga.</p>
+<p>Będziemy potrzebować sposobu żeby się weryfikować przy uploadowaniu, więc trzeba sobie stworzyć klucze ssh. Służy do tego komenda:</p>
+<pre><code>	ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot; # i wiadomo, podmień na swoje
+</code></pre>
+<p>W Githubie wejdź w Settings (pod zdjęciem profilu), po lewej będzie zakładka SSH and GPG keys. W Nagłówku SSH keys wklej swój publiczny klucz ssh (calutki, z pierwszym i ostatnim słowem). Klucz znajdzie się w folderze ~/.ssh/
+Otwórz go sobie:</p>
+<pre><code>	cat ~/.ssh/id_rsa.pub # z rozwinięciem .pub jest publiczny, id_rsa to domyślna nazwa, ten drugi bez rozwinięcia jest prywatny, ma tu zostać. 
+</code></pre>
+<p>Żeby przetestować czy udaje się zweryfikować można zrobić tak:</p>
+<pre><code>	ssh -T git@github.com
+	# powinien pojawić się taki komentarz:
+	Hi ChudyWoody! You've successfully authenticated, but GitHub does not provide shell access.
+</code></pre>
+<p>Do tej pory pracowaliśmy na lokalnym repozytorium gita na naszym kompie, ale git się o tym nie kapnie póki mu nie powiemy żeby się kapnął. Musimy mu powiedzieć, że to w naszym folderze jest źródłem dla zgre_blog_test_repo na githubie:</p>
+<pre><code>	git remote add origin git@github.com:ChudyWoody/zgre_blog_repo_test
+	# po dwukropku dajemy swoją nazwę użytkownika w GitHubie, po slashu nazwę repozytorium (tą na githubie, może się różnić od lokalnego folderu jak u mnie). Origin to powszechny sposób etykietowania czy coś.
+</code></pre>
+<p>Następnie trzeba dodać wszystkie zmiany jakie poczyniliśmy w lokalnym folderze do lokalnego repo (upewnij się że jesteś w odpowiednim miejscu):</p>
+<pre><code>	pwd # powinieneś być w swoim folderze z plikami stronki
+	git add . # doda zmiany do repozytorium zdalnego (na kompie)
+	git commit -m &quot;pierwszy commit&quot; # doda pierwszy commit, -m służy do dodania komentarza
+	git push -u origin master # wyśle rzeczy do githuba? Tak, pośle rzeczy do githuba.
+</code></pre>
+<p>***TO CHYBA NIEWAŻNE
+Teraz będziemy się rozjeżdżać z Chuckiem, bo on swoją stronkę hostuje na Hostinger, ale my chcemy używać tylko Github Pages.</p>
+<pre><code>	# Tworzy nową gałąź (GHPages) zawierającą tylko pliki z katalogu `public`
+	git subtree split --prefix public -b GHPages-deploy
+
+	# Wypycha (`push`) nową gałąź `hostinger-deploy` do zdalnej gałęzi `GHPages` na GitHubie
+	git push origin GHPages-deploy:GHPages --force # force zmusza do nadpisania, jeśli taka gałąź już istnieje
+	
+	# Usuwa lokalną gałąź GHPages-deploy (nie jest już potrzebna, służyła tylko do pushnięcia jej do GitHuba)
+	git branch -D GHPages-deploy
+</code></pre>
+<p><em><strong>Dobra, mamy gałązkę z samą stronką do publikowania.</strong></em></p>
+<p>Github Pages normalnie pozwala na publikowanie stron zrobionych w Jekyllu, ale hugo ma sposób żeby to obejść.
+<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/"  class="external-link" target="_blank" rel="noopener">https://gohugo.io/hosting-and-deployment/hosting-on-github/</a></p>
+<p>Trzeba wejść w swoje repo ze stronką, wejść w ustawienia repo (nie użytkowanika jak wcześniej, ustawienia repo będą na poziomej wstążce <em><strong>,musimy też wybrać odpowiedniego brancha - GHPages w naszym przypadku).</strong></em> Po lewej będzie zakładka Pages. Pod nagłówkiem &ldquo;Build and deploymment&rdquo; wybieramy Source &ldquo;GitHub Actions&rdquo; (nie trzeba nijak potwierdzać).</p>
+<p>W naszym lokalnym folderze trzeba utworzyć nowy katalog z plikiem hugo.yaml</p>
+<pre><code>	mkdir -p .github/workflows
+	touch .github/workflows/hugo.yaml
+</code></pre>
+<p>W utworzonym pliku trzeba przekleić ustawieniadla workflowa zmieniając odpowiednio branch i wersję hugo jeśli jest potrzeba.
+Treść dla pliku hugo.yaml
+<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#step-6"  class="external-link" target="_blank" rel="noopener">https://gohugo.io/hosting-and-deployment/hosting-on-github/#step-6</a></p>
+<p>Następnie według instrukcji z gohugo</p>
+<pre><code>	git add -A
+	git commit -m &quot;Create hugo.yaml&quot;
+	git push # nie trzeba robić &quot;-u origin master&quot;, git pamięta że ma pushować do master
+</code></pre>
+<p>Następnie trzeba uruchomić workflow. By to zrobić wybieramy nasz repo ze stronką, przechodzimy do Actions na wstążce, po lewej będzie &ldquo;All workflows&rdquo; z &ldquo;Deploy Hugo site to Pages&rdquo;.  Klikamy na niego, po prawej się on pojawi z przyciskiem Run workflow. Można tam wybrać branche</p>
+<h3 id="problem---czy-trzeba-wybierać-branch-ghpages-czy-niepotrzebnie-ją-zrobiłem-wcześniej">
+  problem - czy trzeba wybierać branch GHPages? czy niepotrzebnie ją zrobiłem wcześniej?
+  <a class="heading-link" href="#problem---czy-trzeba-wybiera%c4%87-branch-ghpages-czy-niepotrzebnie-j%c4%85-zrobi%c5%82em-wcze%c5%9bniej">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Po kliknięciu będzie się chwilę kulać. Jak znaczek się zmieni na zielony znaczy że skończył.
+Wtedy można kliknąć na ten nasz workflow, pokażą się boksy &ldquo;build&rdquo; i &ldquo;deploy&rdquo;. Pod drugim będzie link do naszej stronki.</p>
+<h3 id="problem---stronka-się-wygenerowała-ale-zdjęcia-są-złe-trzeba-pokminić-nad-lokalizacjami-problem-pewnie-jest-w-hugoyaml-który-źle-mi-interpretuje-lokalizacje-zdjęć">
+  problem - stronka się wygenerowała, ale zdjęcia są złe, trzeba pokminić nad lokalizacjami, problem pewnie jest w hugo.yaml który źle mi interpretuje lokalizacje zdjęć
+  <a class="heading-link" href="#problem---stronka-si%c4%99-wygenerowa%c5%82a-ale-zdj%c4%99cia-s%c4%85-z%c5%82e-trzeba-pokmini%c4%87-nad-lokalizacjami-problem-pewnie-jest-w-hugoyaml-kt%c3%b3ry-%c5%bale-mi-interpretuje-lokalizacje-zdj%c4%99%c4%87">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+     ChudWoody 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

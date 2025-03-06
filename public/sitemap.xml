@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/zgre_blog_repo_test/about/</loc>
+  </url><url>
+    <loc>http://localhost:1313/zgre_blog_repo_test/authors/</loc>
+  </url><url>
+    <loc>http://localhost:1313/zgre_blog_repo_test/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/zgre_blog_repo_test/posts/</loc>
+  </url><url>
+    <loc>http://localhost:1313/zgre_blog_repo_test/posts/robiemy/robimy-zgreblog/</loc>
+  </url><url>
+    <loc>http://localhost:1313/zgre_blog_repo_test/series/</loc>
+  </url><url>
+    <loc>http://localhost:1313/zgre_blog_repo_test/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/zgre_blog_repo_test/posts/twrzymyinternetwrouterze/twrzymyinternetwrouterze/</loc>
+  </url><url>
+    <loc>http://localhost:1313/zgre_blog_repo_test/posts/unwersalna-sesja-treningowa-rpg/unwersalna-sesja-treningowa-rpg/</loc>
+  </url><url>
+    <loc>http://localhost:1313/zgre_blog_repo_test/</loc>
+  </url>
+</urlset>

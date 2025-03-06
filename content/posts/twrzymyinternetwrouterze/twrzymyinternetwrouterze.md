@@ -1,7 +1,7 @@
 ---
 title: twrzymy
 ---
-!![Pasted image 20250304204829](/images/Pasted%20image%2020250304204829.png)
+![Pasted image 20250304204829](../Pasted%20image%2020250304204829.png)
 
 
 sudo ip addres add 192.168.1.1 dev enp0s31f6
